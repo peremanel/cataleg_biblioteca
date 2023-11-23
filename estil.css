@@ -1,0 +1,108 @@
+@charset "utf-8";
+/* Full d'estils */
+
+body, input, textarea {
+	font-family: Arial;
+	font-size: 12px;
+	color: #555555;
+}
+
+table {
+	border-style: solid;
+	border-width: thin;
+}
+
+td {
+	border-style: solid;
+	border-width: thin;
+	padding: 5px;
+}
+
+div {
+	padding: 5px;
+}
+
+div#principal {
+	max-width: 900px;
+	margin: auto;
+	display: -webkit-flex;
+	-webkit-flex-direction: column;
+	display: flex;
+	flex-direction: row;
+}
+
+div#barra {
+	width: 20%;
+	display: -webkit-flex;
+	-webkit-flex-direction: column;
+	display: flex;
+	flex-direction: column;
+
+}
+
+div#cos {
+	width: 80%;
+	display: -webkit-flex;
+	-webkit-flex-direction: column;
+	display: flex;
+	flex-direction: column;
+}
+
+div#logo, div#titol_barra, div#menu, div#titol_cos, div#contingut, div#navegador, div#item {
+	flex: 0 1 auto;	
+}
+
+/* Too narrow to support three columns */
+@media all and (max-width: 640px) {
+  
+   #principal {
+    -webkit-flex-flow: column;
+            flex-flow: column;
+   }
+
+   div#barra, div#cos {
+    min-height: 250px;
+    max-height: 250px;
+   }
+  }
+
+.prestec_viu {
+	background-color: orange;
+}
+
+.referencia {
+	margin-bottom: 10px;
+}
+
+.versalita {
+	font-variant: small-caps;
+}
+
+.error {
+	color: red;
+}
+
+.advertencia {
+	color: orange;
+}
+
+.entrada {
+	display: -webkit-flex;
+	-webkit-flex-direction: row;
+	display: flex;
+	flex-direction: row;
+	padding: 0px;
+	margin-bottom: 3px;
+}
+
+.etiqueta {
+	width: 110px;
+	margin: 0px;
+	padding: 0px;
+	flex: 0 1 auto;	
+}	
+
+.valor {
+	padding: 0px;
+	flex: 0 1 auto;
+}
